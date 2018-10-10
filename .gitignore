@@ -1,2 +1,9 @@
 login.phtml
 MercadoPago/**/*
+Font/**/*
+billing.phtml
+font-awesome.css
+head.phtml
+header.phtml
+login.phtml
+totals.phtml

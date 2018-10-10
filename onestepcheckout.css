@@ -12,7 +12,10 @@
 .form-list .customer-dob select { display:block; width:74px; }
 
 .hide {display: none;}
-.nao-sei-cep {cursor: help;font-size: 11px;margin-left: 10px; position: relative; padding-top: 11px; display: block;}
+.nao-sei-cep {cursor: help;font-size: 11px;position: relative;display: block; top:-5.5em;left: 23em;}
+
+/*.nao-sei-cep {cursor: help;font-size: 11px;margin-left: 10px; position: relative; padding-top: 11px; display: block;}*/
+
 .sp-methods .form-list{padding-left: 0px;}
 .onestepcheckout-postcod-process{display: none;margin-left: -15px;position: absolute;width: 16px;height: 16px;}
 .onestepcheckout-error-msg, .onestepcheckout-success-msg{font-weight:bold;padding-top: 3px;padding-bottom: 3px;}
@@ -36,7 +39,7 @@
 .onestepcheckout-timer-actions-left a{margin-right: 15px;}
 .onestepcheckout-timer-actions-right a{margin-left: 15px;}
 .onestepcheckout-add-loader-into-this-block,#onestepcheckout-order-review-cart-wrapper,#onestepcheckout-order-review-coupon-wrapper{position: relative;}
-.osc-title{background: none repeat scroll 0 0 #F9F3E3;border-top: 1px solid #BBAFA0;border-bottom: 1px solid #BBAFA0;color: #F18200;cursor: default;padding-bottom: 5px;margin: 14px -8px !important;line-height: 26px;padding: 0 14px;font-weight: bold;}
+.osc-title{/*background: none repeat scroll 0 0 #F9F3E3;border-top: 1px solid #BBAFA0;border-bottom: 1px solid #BBAFA0;color: #F18200;*/cursor: default;padding-bottom: 5px;margin: 14px -8px !important;line-height: 26px;padding: 0 14px;font-weight: bold;}
 #onestepcheckout-title{}
 #onestepcheckout-title-description{font-size: 18px;}
 #onestepcheckout-authentification-button{border-top: 1px solid #D8D2C7;}
@@ -93,39 +96,120 @@
 .onestepcheckout-popup-accept button:hover{background: #ddd;border: 1px solid #999;}
 .onestepcheckout-popup-accept a{float: right;margin-right: 16px;font-size: 20px;margin-top: 5px;}
 
-/*css for onestep by raphael.*/
+
 
 /*css for onestep by raphael.*/
 .step-title{
-  border-radius: 20px 20px 0px 0px;
-  background-color: #1879cc;
+	border-radius: 20px 20px 0px 0px;
+	background-color: #1879cc;
 }
 /*circle*/
 .step-title span{
-  float: left;
-  margin-left: 20px;
-  margin-top: 13px;
-  background: #fff;
-  border-radius: 0.8em;
-  -moz-border-radius: 0.8em;
-  -webkit-border-radius: 0.8em;
-  color: #1879cc;
-  display: inline-block;
-  font-weight: bold;
-  line-height: 1.8em;
-  font-size: 16px;
-  text-align: center;
-  width: 1.8em; 
+	float: left;
+	margin-left: 20px;
+	margin-top: 13px;
+	background: #fff;
+	border-radius: 0.8em;
+	-moz-border-radius: 0.8em;
+	-webkit-border-radius: 0.8em;
+	color: #1879cc;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1.8em;
+	font-size: 16px;
+	text-align: center;
+	width: 1.8em; 
 }
 .step-title h2{
-  color: white;
-  margin-right: 100px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  float: right;
+	color: white;
+	margin-right: 100px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: right;
 }
 
 .opc{
-  border:solid 1px #EEEEEE;
-  border-radius: 20px 20px;
+	border:solid 1px #EEEEEE;
+	border-radius: 20px 20px;
+}
+
+.input-text{
+	border-radius: 5px !important;  
+}
+/*Forma de pagamento*/
+dt[rel="checkmo"] {
+	border:solid 1px #C0C4DF;
+	height: 50px; 
+	border-radius: 7px;
+}
+#p_method_checkmo , #p_method_ccsave{
+	display:block;
+	margin-left: 1.2em;
+	margin-top:1em;
+}
+
+dt[rel="checkmo"] label, dt[rel="ccsave"] label {
+	margin-left: 3em;
+	position: relative;
+	top: -1.5em;
+}
+
+dt[rel="ccsave"] {
+	margin-top:5px;
+	height: 50px;
+	border-radius: 7px;
+	border:solid 1px #C0C4DF;
+	margin-bottom: 15px;
+}
+
+.cvv-what-is-this{
+	cursor: help;
+	font-size: 11px;
+	margin-left: 0.5em;
+}
+
+.onestepcheckout-cart-table tr th  {
+	border:none;
+	color:black;
+}
+.product-name{
+	color:#45508b;
+	font-size: 18px;
+}
+.item-options dt{
+	font-weight:700;
+	color: black;
+}
+.item-options dd {
+		color:#45508b;
+}
+.cart-price span:first-child{
+	font-size:18px;
+	font-weight: bold;
+	color:#FD951C;
+}
+tfoot {
+	background-color:#F6F6F6;
+}
+
+tfoot td span{
+	font-size: 17px;
+}
+#onestepcheckout-review-newsletter-simple input{
+	position: relative;
+	left: 15px;
+	
+}
+#onestepcheckout-review-newsletter-simple label{
+	position:relative;
+  left: 38px;
+	top:-21px;
+}
+
+#onestepcheckout-place-order-button{
+	background-color:#FEC221;
+	border-radius: 10px;
+	height: 40px;
+	font-size: 19px;
+	font-weight: 900;
 }
